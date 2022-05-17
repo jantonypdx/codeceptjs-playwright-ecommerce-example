@@ -30,6 +30,7 @@ exports.config = {
   },
   include: {
     I: './steps_file.js',
+    header: './pages/header.js',
     search: './pages/search.js',
     category: './pages/category.js',
     cart: './pages/cart.js'

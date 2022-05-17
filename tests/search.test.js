@@ -1,6 +1,6 @@
 const assert = require('node:assert');
 
-Feature.skip('Search');
+Feature('Search');
 
 Scenario(`can search for 'dress'`, async ({ I, search, category }) => {
   I.amOnPage('/');

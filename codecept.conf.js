@@ -14,7 +14,7 @@ exports.config = {
     Playwright: {
       url: 'http://automationpractice.com/index.php',
       show: true,
-      timeout: 15000,
+      timeout: 30000,
       waitForTimeout: 10000,
       waitForAction: 500,
       channel: 'chrome'
@@ -37,5 +37,9 @@ exports.config = {
   },
   bootstrap: null,
   mocha: {},
+  gherkin: {
+    features: `./features/*.feature`,
+    steps: [`./steps/steps.js`]
+  },
   name: 'codeceptjs-playwright-ecommerce-example'
 };

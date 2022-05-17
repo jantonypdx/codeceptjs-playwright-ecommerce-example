@@ -4,17 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:desktop:tests": "npx codeceptjs run --tests",
-    "test:tablet:tests": "npx codeceptjs run --tests -c codecept.conf.ipad.js",
-    "test:mobile:tests": "npx codeceptjs run --tests -c codecept.conf.iphone.js",
-    "test:desktop:features": "npx codeceptjs run --features"
+    "start": "ntl",
+    "tests:desktop": "npx codeceptjs run --tests",
+    "tests:tablet": "npx codeceptjs run --tests -c codecept.conf.ipad.js",
+    "tests:mobile": "npx codeceptjs run --tests -c codecept.conf.iphone.js",
+    "features:desktop": "npx codeceptjs run --features",
+    "features:tablet": "npx codeceptjs run --features -c codecept.conf.ipad.js",
+    "features:mobile": "npx codeceptjs run --features -c codecept.conf.iphone.js"
   },
   "keywords": [],
   "author": "John Antony",
   "license": "MIT ",
   "dependencies": {
     "codeceptjs": "^3.3.3",
-    "ntl": "^5.1.0"
+    "ntl": "^5.1.0",
+    "playwright": "^1.22.1"
   },
   "devDependencies": {
     "eslint": "^8.15.0",
@@ -23,7 +27,6 @@
     "eslint-plugin-cucumber": "^2.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "playwright": "^1.21.1",
     "prettier": "^2.6.2"
   }
 }

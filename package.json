@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:desktop:tests": "npx codeceptjs run --tests",
+    "test:tablet:tests": "npx codeceptjs run --tests -c codecept.conf.ipad.js",
+    "test:mobile:tests": "npx codeceptjs run --tests -c codecept.conf.iphone.js",
+    "test:desktop:features": "npx codeceptjs run --features"
   },
   "keywords": [],
   "author": "John Antony",
@@ -20,6 +23,7 @@
     "eslint-plugin-cucumber": "^2.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "playwright": "^1.21.1",
     "prettier": "^2.6.2"
   }
 }

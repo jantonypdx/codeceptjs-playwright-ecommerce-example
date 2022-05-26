@@ -45,11 +45,11 @@ Given('I should see products returned', async () => {
 
 // Cart
 Given('I should see {int} product(s) in cart', async (quantity) => {
-  const cartQuanity = await cart.getQuantity();
+  const cartQuantity = await cart.getQuantity();
   assert.equal(
-    cartQuanity,
+    cartQuantity,
     quantity,
-    `Expected ${quantity}, but found ${cartQuanity} product(s) in Cart`
+    `Expected ${quantity}, but found ${cartQuantity} product(s) in Cart`
   );
   await I.wait(5);
 });

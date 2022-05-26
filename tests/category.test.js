@@ -8,10 +8,10 @@ Scenario(`can add product to cart`, async ({ I, search, category, cart }) => {
   await category.addProductToCart('random');
 
   const expectedQuantity = 1;
-  const cartQuanity = await cart.getQuantity();
+  const cartQuantity = await cart.getQuantity();
   assert.equal(
-    cartQuanity,
+    cartQuantity,
     expectedQuantity,
-    `Expected ${expectedQuantity}, but found ${cartQuanity} products in Cart`
+    `Expected ${expectedQuantity}, but found ${cartQuantity} products in Cart`
   );
 });

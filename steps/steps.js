@@ -51,7 +51,6 @@ Given('I should see {int} product(s) in cart', async (quantity) => {
     quantity,
     `Expected ${quantity}, but found ${cartQuantity} product(s) in Cart`
   );
-  await I.wait(5);
 });
 
 // Header
